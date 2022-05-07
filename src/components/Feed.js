@@ -1,45 +1,90 @@
+import Posts from "./Posts"
+import Sidebar from "./Sidebar"
+
 export default function Feed(){
     return(
-   <div>
-  <div className="post">
-    <div className="circulo-post">
-      <img className="img-post" src="imagens/ze.png" />
-      <div className="nome-post">ze_carioca</div>
-    </div>
-    <div className="prenche">
-      <img className="foto" src="imagens/ze-carioca-selfie.jpg" />
-    </div>
-    <div className="icones-baixo">
-      <ion-icon className="icon" name="heart-outline" />
-      <ion-icon className="icon" name="chatbubble-outline" />
-      <ion-icon className="icon" name="paper-plane-outline" />
-    </div>
-    <div className="curtidas">
-      <img className="img-postb" src="imagens/rato.png" />
-      <p>Curtida  por <b>rato_bob</b> e  <b>outras 101.523 pessoas</b></p>
-    </div>
-  </div>
-  <div className="post">
-    <div className="circulo-post">
-      <img className="img-post2" src="imagens/CABEÇA.png" />
-      <div className="nome-post">calango_cast</div>
-    </div>
-    <div className="prenche2">
-      <img className="foto" src="imagens/tio-calango.png" />
-    </div>
-    <div className="icones-baixo">
-      <ion-icon className="icon" name="heart-outline" />
-      <ion-icon className="icon" name="chatbubble-outline" />
-      <ion-icon className="icon" name="paper-plane-outline" />
-    </div>
-    <div className="curtidas">
-      <img className="img-postb" src="imagens/mendigato.jpg" />
-      <p>Curtida  por <b>mendi_gato</b> e  <b>outras 80.000 pessoas</b></p>
-    </div>
-    <br />
-    <br />
-  </div>
-</div>
+      <div class="corpo">
+      <div class="esquerda">
+        <div class="stories">
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/9gag.svg" />
+            </div>
+            <div class="usuario">
+              9gag
+            </div>
+          </div>
 
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/meowed.svg" />
+            </div>
+            <div class="usuario">
+              meowed
+            </div>
+          </div>
+
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/barked.svg" />
+            </div>
+            <div class="usuario">
+              barked
+            </div>
+          </div>
+
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/nathanwpylestrangeplanet.svg" />
+            </div>
+            <div class="usuario">
+              nathanwpylestrangeplanet
+            </div>
+          </div>
+
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/wawawicomics.svg" />
+            </div>
+            <div class="usuario">
+              wawawicomics
+            </div>
+          </div>
+          
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/respondeai.svg" />
+            </div>
+            <div class="usuario">
+              respondeai
+            </div>
+          </div>
+
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/filomoderna.svg" />
+            </div>
+            <div class="usuario">
+              filomoderna
+            </div>
+          </div>
+
+          <div class="story">
+            <div class="imagem">
+              <img src="assets/img/memeriagourmet.svg" />
+            </div>
+            <div class="usuario">
+              memeriagourmet
+            </div>
+          </div>
+
+          <div class="setinha">
+            <ion-icon name="chevron-forward-circle"></ion-icon>
+          </div>
+        </div>
+        <Posts />
+        </div>
+        <Sidebar />
+        </div>
     )
 }

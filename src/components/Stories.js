@@ -1,45 +1,45 @@
-export default function Stories() {
+
+
+
+
+
+export default function Stories() { 
+    
+    const nomeStories = ["calango_cast ",
+                         "ze_carioca ",
+                         "batatao ",
+                         "skylab ",
+                         "rato_bob ",
+                         "monkey.d ",
+                         "mendi_gato "
+    ]
+    const imgStories = [
+                    "imagens/CABEÇA.png",
+                     "imagens/ze.png",
+                    "imagens/batata.png",
+                    "imagens/rogerio-skylab.jpg",
+                    "imagens/rato.png",
+                    "imagens/luffy.jpg",
+                     "imagens/mendigato.jpg"
+                    ]
+     const ComponentesnomeStories = nomeStories.map(nomeStorie => <span>{nomeStorie}</span>)
+    const componentesimgStories = imgStories.map
+    (imgStorie =>  <div classname="circulo"><img classname="img-stories" src="{imgStorie}" /><img classname="rodela" src="imagens/stories_background.png" />
+  <div classname="nome-stories">bob</div></div>
+
+)
+    
+   
+   //{nomeStories.map({nomeStorie}}
+
+ 
     return (
+        <div>
        <div className="caixa-stories">
   <img className="seta" src="icones/seta.svg" />
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-stories" src="imagens/CABEÇA.png" />
-    <div className="nome-stories">calango_cast</div>
-  </div>
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-storiesb" src="imagens/ze.png" />
-    <div className="nome-stories">ze_carioca</div>
-  </div>
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-storiesc" src="imagens/batata.png" />
-    <div className="nome-stories">batatao</div>
-  </div>
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-storiesc" src="imagens/rogerio-skylab.jpg" />
-    <div className="nome-stories">skylab</div>
-  </div>
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-storiesc" src="imagens/rato.png" />
-    <div className="nome-stories">rato_bob</div>
-  </div>
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-storiesc" src="imagens/luffy.jpg" />
-    <div className="nome-stories">monkey.d</div>
-  </div>
-  <div className="circulo">
-    <img className="rodela" src="imagens/stories_background.png" />
-    <img className="img-storiesc" src="imagens/mendigato.jpg" />
-    <div className="nome-stories">mendi_gato</div>
-  </div>
-</div>
-
-
-
-                                                                        )
+  {componentesimgStories}
+    </div>
+    </div>
+    
+  )
 }
